@@ -5,9 +5,9 @@ Esse é um código simples onde podemos ver o poder que a visão computacional t
 
 Exemplo com o projeto sendo executado:
 
-![screenshot](https://user-images.githubusercontent.com/122923404/214374040-cb1f10d3-562a-4a58-9c35-9283c41654fd.png)
+![screenshot](https://user-images.githubusercontent.com/122923404/214380100-3667434f-7ef3-4870-b29c-b43f4463cb20.png)
 
-Mesmo com muita luz, a IA consegue identificar claramente onde está a minha mão
+Neste caso, a IA consegue identificar claramente onde está a minha mão. Pode haver momentos que a identificação falhe por motivos de ambiente (muita ou pouca iluminação, muitos elementos na imagem, etc.)
 
 ## Bibliotecas utilizadas:
 * OPENCV-PYTHON == 4.7.0.68
