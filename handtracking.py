@@ -1,15 +1,15 @@
 import cv2
 import mediapipe as mp
 
-webcam = cv2.VideoCapture(0)
+cam = cv2.VideoCapture(0)
 mpMao = mp.solutions.hands
 mao = mpMao.Hands()
 desenho = mp.solutions.drawing_utils
 
-if webcam.isOpened():
-    validacao, frame = webcam.read()
+if cam.isOpened():
+    validacao, frame = cam.read()
     while validacao:
-        validacao, frame = webcam.read()
+        validacao, frame = cam.read()
         #OpenCV trablha na escala BGR
         #Converte a imagem para RGB, que é a escala utilizada pelo mediapipe
         frameRGB = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB) 
@@ -27,5 +27,5 @@ if webcam.isOpened():
             break
 
 
-webcam.release()
+cam.release()
 cv2.destroyAllWindows()
